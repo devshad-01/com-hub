@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# Backblaze B2 Configuration
+export B2_APPLICATION_KEY_ID="YOUR_B2_KEY_ID"
+export B2_APPLICATION_KEY="YOUR_B2_APP_KEY"
+export B2_BUCKET_NAME="YOUR_B2_BUCKET_NAME"
+export B2_DOWNLOAD_URL="https://fXXX.backblazeb2.com"
+
+# MongoDB Configuration
+export MONGO_URL="mongodb+srv://USERNAME:PASSWORD@cluster.mongodb.net/DATABASE?retryWrites=true&w=majority"
+
+# Email Configuration
+export MAIL_URL="smtp://SMTP_USER:SMTP_PASSWORD@smtp-relay.brevo.com:587"
+export SMTP_USER="SMTP_USER"
+export SMTP_PASSWORD="SMTP_PASSWORD"
+export EMAIL_FROM="your@email.com"
+
+# Super Admin Configuration
+export SUPERADMIN_EMAIL="admin@yourdomain.com"
+export SUPERADMIN_PASSWORD="YourSecurePasswordHere!"
+
+# Security Settings
+export BCRYPT_ROUNDS="12"
+export SESSION_TIMEOUT="604800000"
+
+# Run meteor with settings file and all arguments passed to this script
+meteor $*

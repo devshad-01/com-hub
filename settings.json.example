@@ -1,0 +1,78 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb+srv://username:password@cluster.mongodb.net/database?retryWrites=true&w=majority",
+      "ROOT_URL": "https://your-app-name.meteorapp.com",
+      "MAIL_URL": "smtp://username:password@smtp.provider.com:587",
+      "B2_APPLICATION_KEY_ID": "your_application_key_id",
+      "B2_APPLICATION_KEY": "your_application_key",
+      "B2_BUCKET_NAME": "your_bucket_name",
+      "B2_DOWNLOAD_URL": "https://f000.backblazeb2.com",
+      "SUPERADMIN_EMAIL": "admin@yourdomain.com",
+      "SUPERADMIN_PASSWORD": "YourSecurePassword",
+      "BCRYPT_ROUNDS": "12",
+      "SESSION_TIMEOUT": "604800000"
+    }
+  },
+  "public": {
+    "requireEmailVerification": true,
+    "app": {
+      "name": "YOUR_APP_NAME",
+      "version": "1.0.0",
+      "storage": {
+        "default": "cloudinary",
+        "options": {
+          "cloudinary": {
+            "defaultFolder": "community_uploads"
+          },
+          "backblaze": {
+            "bucketName": "demo-deploy"
+          }
+        }
+      }
+    },
+    "security": {
+      "maxLoginAttempts": 5,
+      "lockoutDuration": 900000,
+      "sessionTimeout": 604800000,
+      "passwordResetTimeout": 86400000
+    }
+  },
+  "private": {
+    "security": {
+      "bcryptRounds": 12,
+      "rateLimiting": {
+        "enabled": true,
+        "authMethods": {
+          "perConnection": 5,
+          "perMinute": 60
+        }
+      }
+    },
+    "email": {
+      "from": "EMAIL_FROM"
+    },
+    "backblaze": {
+      "keyId": "YOUR_B2_KEY_ID",
+      "applicationKey": "YOUR_B2_APP_KEY",
+      "bucketName": "YOUR_B2_BUCKET_NAME",
+      "apiUrl": "https://apiXXX.backblazeb2.com",
+      "downloadUrl": "https://fXXX.backblazeb2.com"
+    },
+    "cloudinary": {
+      "cloudname": "YOUR_CLOUDINARY_CLOUDNAME",
+      "apikey": "YOUR_CLOUDINARY_APIKEY",
+      "apisecret": "YOUR_CLOUDINARY_APISECRET"
+    }
+  },
+  "packages": {
+    "email": {
+      "service": "brevo",
+      "host": "smtp-relay.brevo.com",
+      "port": 587,
+      "secure": false,
+      "user": "SMTP_USER",
+      "password": "SMTP_PASSWORD"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="16" height="16" rx="3" fill="url(#warmGradient16)"/>
+  
+  <!-- Simplified community icon for small size -->
+  <circle cx="8" cy="8" r="5" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+  
+  <!-- Three dots representing people -->
+  <circle cx="6" cy="7" r="1.2" fill="white"/>
+  <circle cx="10" cy="7" r="1.2" fill="white"/>
+  <circle cx="8" cy="5.5" r="1.2" fill="white"/>
+  
+  <!-- Connection lines -->
+  <path d="M7 7 L9 7 M7.5 6.2 L8.5 6.2" stroke="white" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/>
+  
+  <defs>
+    <linearGradient id="warmGradient16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B47"/>
+      <stop offset="100%" style="stop-color:#FB923C"/>
+    </linearGradient>
+  </defs>
+</svg>

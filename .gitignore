@@ -1,0 +1,97 @@
+# Dependencies
+node_modules/
+
+# Meteor settings files (exclude sensitive settings)
+settings-development.json
+settings-local.json
+settings-private.json
+settings-production.json
+# Keep example and template settings in repo
+
+# Environment variables and startup scripts
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.scripts/run-meteor
+scripts/run-meteor
+scripts
+# Allow example and template files
+!.scripts/*.example
+!.scripts/README.md
+
+# Private configuration files
+private/settings.json
+private/settings-*.json
+private/*.json
+
+# Meteor build directory
+.meteor/local
+.meteor/meteorite
+
+
+# Meteor logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+
+# Build files
+*.tgz
+*.tar.gz
+build/
+dist/
+
+# Deployment and temp files
+.deploy/
+.tmp/
+tmp/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output
+
+# Documentation files (you may want to keep some of these)
+GUIDE.MD
+collectioguide.md
+meteor3jsdocs.txt
+meteorAccounts_guide.md
+emailguide.md
+meteor_methods.md
+METEOR_HTTP.MD
+mpesa.md
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Database dumps
+*.dump
+*.sql.env
+node_modules/
+*.pyc

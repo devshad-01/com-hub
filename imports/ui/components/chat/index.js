@@ -1,0 +1,1 @@
+export { GeneralChat } from './GeneralChat';
